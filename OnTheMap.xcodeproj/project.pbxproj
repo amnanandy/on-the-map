@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		3819B4D72290ADCA004C9A34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3819B4D62290ADCA004C9A34 /* AppDelegate.swift */; };
-		3819B4D92290ADCA004C9A34 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3819B4D82290ADCA004C9A34 /* FirstViewController.swift */; };
-		3819B4DB2290ADCA004C9A34 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3819B4DA2290ADCA004C9A34 /* SecondViewController.swift */; };
+		3819B4D92290ADCA004C9A34 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3819B4D82290ADCA004C9A34 /* MapViewController.swift */; };
+		3819B4DB2290ADCA004C9A34 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3819B4DA2290ADCA004C9A34 /* ListViewController.swift */; };
 		3819B4DE2290ADCA004C9A34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3819B4DC2290ADCA004C9A34 /* Main.storyboard */; };
 		3819B4E02290ADD1004C9A34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3819B4DF2290ADD1004C9A34 /* Assets.xcassets */; };
 		3819B4E32290ADD1004C9A34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3819B4E12290ADD1004C9A34 /* LaunchScreen.storyboard */; };
+		3819B52122D004A6004C9A34 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3819B52022D004A6004C9A34 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3819B4D32290ADCA004C9A34 /* OnTheMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnTheMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3819B4D62290ADCA004C9A34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3819B4D82290ADCA004C9A34 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		3819B4DA2290ADCA004C9A34 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		3819B4D82290ADCA004C9A34 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		3819B4DA2290ADCA004C9A34 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		3819B4DD2290ADCA004C9A34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3819B4DF2290ADD1004C9A34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3819B4E22290ADD1004C9A34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3819B4E42290ADD1004C9A34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3819B52022D004A6004C9A34 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 		3819B4CA2290ADCA004C9A34 = {
 			isa = PBXGroup;
 			children = (
+				3819B4D62290ADCA004C9A34 /* AppDelegate.swift */,
 				3819B4D52290ADCA004C9A34 /* OnTheMap */,
 				3819B4D42290ADCA004C9A34 /* Products */,
 			);
@@ -56,15 +59,55 @@
 		3819B4D52290ADCA004C9A34 /* OnTheMap */ = {
 			isa = PBXGroup;
 			children = (
-				3819B4D62290ADCA004C9A34 /* AppDelegate.swift */,
-				3819B4D82290ADCA004C9A34 /* FirstViewController.swift */,
-				3819B4DA2290ADCA004C9A34 /* SecondViewController.swift */,
-				3819B4DC2290ADCA004C9A34 /* Main.storyboard */,
-				3819B4DF2290ADD1004C9A34 /* Assets.xcassets */,
-				3819B4E12290ADD1004C9A34 /* LaunchScreen.storyboard */,
+				3819B51F22D000B2004C9A34 /* Storyboards */,
+				3819B51E22D000AD004C9A34 /* Assets */,
+				3819B51D22D000A3004C9A34 /* Views */,
+				3819B51C22D00095004C9A34 /* ViewControllers */,
+				3819B51B22D00085004C9A34 /* Model */,
 				3819B4E42290ADD1004C9A34 /* Info.plist */,
 			);
 			path = OnTheMap;
+			sourceTree = "<group>";
+		};
+		3819B51B22D00085004C9A34 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3819B51C22D00095004C9A34 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3819B4D82290ADCA004C9A34 /* MapViewController.swift */,
+				3819B4DA2290ADCA004C9A34 /* ListViewController.swift */,
+				3819B52022D004A6004C9A34 /* LoginViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3819B51D22D000A3004C9A34 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3819B51E22D000AD004C9A34 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				3819B4DF2290ADD1004C9A34 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		3819B51F22D000B2004C9A34 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				3819B4E12290ADD1004C9A34 /* LaunchScreen.storyboard */,
+				3819B4DC2290ADCA004C9A34 /* Main.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +181,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3819B4DB2290ADCA004C9A34 /* SecondViewController.swift in Sources */,
+				3819B52122D004A6004C9A34 /* LoginViewController.swift in Sources */,
+				3819B4DB2290ADCA004C9A34 /* ListViewController.swift in Sources */,
 				3819B4D72290ADCA004C9A34 /* AppDelegate.swift in Sources */,
-				3819B4D92290ADCA004C9A34 /* FirstViewController.swift in Sources */,
+				3819B4D92290ADCA004C9A34 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
